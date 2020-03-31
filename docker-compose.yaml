@@ -13,4 +13,4 @@ services:
       - 9504:9504
       - 9505:9505
     volumes:
-      - /home/feedback/nginx-dev/config/:/etc/nginx/
+      - ./config/:/etc/nginx/
