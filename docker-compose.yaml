@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  reverse:
+    container_name: 2co-reverse-proxy-dev
+    hostname: reverse
+    image: nginx
+    ports:
+      - 9500:443
+      - 9501:9501
+      - 9502:9502
+      - 9503:9503
+      - 9504:9504
+      - 9505:9505
+    volumes:
+      - /home/feedback/nginx-dev/config/:/etc/nginx/
