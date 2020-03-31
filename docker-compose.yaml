@@ -6,7 +6,8 @@ services:
     hostname: reverse
     image: nginx
     ports:
-      - 9500:443
+      - 8443:443
+      - 9500:9500
       - 9501:9501
       - 9502:9502
       - 9503:9503
